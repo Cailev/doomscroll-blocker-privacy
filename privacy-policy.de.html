@@ -24,19 +24,21 @@
       <li>Es gibt keinen Server, kein Konto, keine Werbung, kein Analyse-Werkzeug und keine Synchronisierung.</li>
       <li>Die Seiten der Erweiterung dürfen technisch keine Verbindungen ins Internet aufbauen (Content Security Policy mit <code>connect-src 'none'</code>).</li>
       <li>Daten werden weder verkauft noch an Dritte weitergegeben, denn sie verlassen das Gerät nicht.</li>
+      <li>Speicherst du eine Sicherung, liegt die Datei dort, wo du sie speicherst. Das passiert nur auf deinen Klick.</li>
     </ul>
 
     <h2>Was verarbeitet wird</h2>
     <table>
       <thead><tr><th>Art</th><th>Beispiel</th><th>Wie lange</th></tr></thead>
       <tbody>
-        <tr><td>Einstellungen und Seitenliste</td><td>Tageslimit, eingeschaltete Seiten, Sprache, eigene Listen</td><td>Bis du sie änderst</td></tr>
+        <tr><td>Einstellungen und Seitenliste</td><td>Tageslimit, eingeschaltete Seiten, Sprache, eigene Listen, Darstellung und Sortierung unter „Seiten“</td><td>Bis du sie änderst</td></tr>
         <tr><td>Tageszustand</td><td>Heute genutzte Minuten, Entsperrungen, Ende der Zusatzzeit</td><td>Bis Mitternacht, danach Übernahme in den Verlauf, wenn der Schalter an ist</td></tr>
         <tr><td>Verlauf</td><td>Tagessummen pro Seite: Nutzungszeit, Sperren, Entsperrungen, Zähler je Modul</td><td>Bis du ihn löschst</td></tr>
         <tr><td>Reflexionstexte</td><td>Dein eigener Text mit seiner Frage</td><td>Bis du sie löschst. Wird der Speicher knapp, fallen die ältesten Texte zuerst weg</td></tr>
-        <tr><td>Erfolge</td><td>Zähler, Serie und der Tag eines Erfolgs</td><td>Bis du sie zurücksetzt</td></tr>
+        <tr><td>Erfolge</td><td>Zähler, Serie, Punkte und der Tag eines Levels</td><td>Bis du sie zurücksetzt</td></tr>
+        <tr><td>Sicherung</td><td>Datei mit Seitenliste, Einstellungen, Funktionen, Verlauf, Erfolgen und, wenn du es nicht abwählst, Reflexionstexten</td><td>Bis du die Datei selbst löschst. Sie liegt außerhalb der Erweiterung</td></tr>
         <tr><td>Technische Angaben</td><td>Installationsdatum, Stand der Schalter, Ende einer Fokuszeit</td><td>Bis zum Zurücksetzen oder Entfernen</td></tr>
-        <tr><td>Sitzungsdaten</td><td>Laufende Aufgabe, Text einer offenen Abmachung, Zuordnung eines Tabs zu einer Seite (nur Seiten-ID)</td><td>Spätestens bis der Browser endet</td></tr>
+        <tr><td>Sitzungsdaten</td><td>Laufende Aufgabe, Text einer offenen Abmachung, Zuordnung eines Tabs zu einer Seite (nur Seiten-ID), die letzte strengere Änderung für höchstens 30 Sekunden</td><td>Spätestens bis der Browser endet</td></tr>
         <tr><td>Ursprungsadresse</td><td>Die volle Adresse hinter dem # der Sperrseite, für die Rückkehr im Tab</td><td>Solange der Tab offen ist. Dein Browser kann sie in seinem eigenen Verlauf behalten</td></tr>
       </tbody>
     </table>
@@ -53,11 +55,12 @@
       <li>Unter „Datenschutz“ legst du fest, was in den Verlauf kommt, und löschst gezielt oder alles.</li>
       <li>„Komplett alles löschen“ entfernt alle Daten sofort. Die Einstellungen folgen mit Lockerungsschutz am nächsten Tag.</li>
       <li>Die Funktion Statistik lässt sich unter „Allgemein“ ausschalten. Dann kommt nichts Neues in den Verlauf.</li>
-      <li>Beim Entfernen der Erweiterung löscht der Browser ihren Speicher. Exportierte Textdateien und der Verlauf des Browsers bleiben.</li>
+      <li>Beim Entfernen der Erweiterung löscht der Browser ihren Speicher. Exportierte Textdateien, gespeicherte Sicherungen und der Verlauf des Browsers bleiben. Ohne gespeicherte Sicherung lassen sich die Daten nicht retten.</li>
     </ul>
 
     <h2>Grenzen</h2>
     <p>Die Daten sind nicht verschlüsselt. Wer dein Browser-Profil nutzen kann, kann sie lesen, auch Reflexionstexte.</p>
+    <p>Die Datei einer Sicherung ist nicht verschlüsselt und enthält deine Seitenliste, deinen Verlauf und deine Texte. Es gibt keine automatische Sicherung, keine Synchronisierung und keinen Schutz vor von Hand geänderten Dateien.</p>
 
     <h2>Berechtigungen</h2>
     <p>Eine genaue Erklärung jeder Berechtigung steht in der Erweiterung unter „Datenschutz“ im Abschnitt „Was diese Erweiterung darf und was nicht“.</p>
