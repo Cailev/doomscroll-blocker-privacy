@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doomscroll Blocker privacy policy</title>
+    <style>
+      body { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; font: 16px/1.55 system-ui, sans-serif; color: #1d1d1b; background: #fff; }
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.15rem; margin-top: 2rem; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { padding: 0.45rem 0.5rem; border: 1px solid #cfcfc9; text-align: start; vertical-align: top; }
+      code { overflow-wrap: anywhere; }
+      @media (prefers-color-scheme: dark) { body { color: #efefea; background: #161615; } th, td { border-color: #45453f; } }
+    </style>
+  </head>
+  <body>
+    <h1>Doomscroll Blocker privacy policy</h1>
+    <p>Last updated: November 4, 2026. Provider: Luca Schick. Contact: dev@cailev.com.</p>
+
+    <h2>In short</h2>
+    <ul>
+      <li>Everything stays on your device, in the extension’s storage in your browser.</li>
+      <li>There is no server, no account, no advertising, no analytics tool and no sync.</li>
+      <li>The extension’s pages technically cannot open connections to the internet (Content Security Policy with <code>connect-src 'none'</code>).</li>
+      <li>Data is neither sold nor passed on to third parties, because it does not leave the device.</li>
+    </ul>
+
+    <h2>What is processed</h2>
+    <table>
+      <thead><tr><th>Kind</th><th>Example</th><th>How long</th></tr></thead>
+      <tbody>
+        <tr><td>Settings and site list</td><td>Daily limit, sites that are on, language, your own lists</td><td>Until you change them</td></tr>
+        <tr><td>Day state</td><td>Minutes used today, unlocks, end of extra time</td><td>Until midnight, then moved to the history if the switch is on</td></tr>
+        <tr><td>History</td><td>Daily totals per site: time used, blocks, unlocks, counters per module</td><td>Until you delete it</td></tr>
+        <tr><td>Reflection texts</td><td>Your own text with its question</td><td>Until you delete them. If storage runs low, the oldest texts go first</td></tr>
+        <tr><td>Achievements</td><td>Counters, streak and the day of an achievement</td><td>Until you reset them</td></tr>
+        <tr><td>Technical details</td><td>Install date, state of switches, end of a focus time</td><td>Until reset or removal</td></tr>
+        <tr><td>Session data</td><td>Running task, text of an open pledge, which site a tab belongs to (site ID only)</td><td>At most until the browser ends</td></tr>
+        <tr><td>Original address</td><td>The full address behind the # of the block page, for returning in the tab</td><td>While the tab is open. Your browser may keep it in its own history</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Web activity</h2>
+    <p>Only sites on your list are recorded. Only the site is stored permanently, never an exact address, path or page title, and only daily totals, so not when exactly you were on a site. Through the <code>webNavigation</code> permission the extension learns about visits to all sites, but it only compares the address with your list. If the site is not on it, nothing happens and nothing is stored. It does not read your saved browsing history.</p>
+    <p>A small script runs on sites you turned on. It sends the site’s address to the extension itself and nowhere else. It does not read any content of the page.</p>
+
+    <h2>The detected browser</h2>
+    <p>When drawing its pages, the extension detects which browser is running so that the right texts appear. The result is never saved and never sent.</p>
+
+    <h2>How to delete data</h2>
+    <ul>
+      <li>Under “Privacy” you decide what goes into the history and delete selectively or everything.</li>
+      <li>“Delete everything” removes all data right away. With Cool-off, the settings follow the next day.</li>
+      <li>The statistics feature can be turned off under “General”. Then nothing new gets into the history.</li>
+      <li>When you remove the extension, the browser deletes its storage. Exported text files and the browser’s own history stay.</li>
+    </ul>
+
+    <h2>Limits</h2>
+    <p>The data is not encrypted. Anyone who can use your browser profile can read it, including reflection texts.</p>
+
+    <h2>Permissions</h2>
+    <p>A detailed explanation of each permission is in the extension under “Privacy”, in the section “What this extension may and may not do”.</p>
+  </body>
+</html>

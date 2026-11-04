@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Datenschutzerklärung Doomscroll Blocker</title>
+    <style>
+      body { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; font: 16px/1.55 system-ui, sans-serif; color: #1d1d1b; background: #fff; }
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.15rem; margin-top: 2rem; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { padding: 0.45rem 0.5rem; border: 1px solid #cfcfc9; text-align: start; vertical-align: top; }
+      code { overflow-wrap: anywhere; }
+      @media (prefers-color-scheme: dark) { body { color: #efefea; background: #161615; } th, td { border-color: #45453f; } }
+    </style>
+  </head>
+  <body>
+    <h1>Datenschutzerklärung Doomscroll Blocker</h1>
+    <p>Stand: 04.11.2026. Anbieter: Luca Schick. Kontakt: dev@cailev.com.</p>
+
+    <h2>Kurz gesagt</h2>
+    <ul>
+      <li>Alles bleibt auf deinem Gerät, im Speicher der Erweiterung in deinem Browser.</li>
+      <li>Es gibt keinen Server, kein Konto, keine Werbung, kein Analyse-Werkzeug und keine Synchronisierung.</li>
+      <li>Die Seiten der Erweiterung dürfen technisch keine Verbindungen ins Internet aufbauen (Content Security Policy mit <code>connect-src 'none'</code>).</li>
+      <li>Daten werden weder verkauft noch an Dritte weitergegeben, denn sie verlassen das Gerät nicht.</li>
+    </ul>
+
+    <h2>Was verarbeitet wird</h2>
+    <table>
+      <thead><tr><th>Art</th><th>Beispiel</th><th>Wie lange</th></tr></thead>
+      <tbody>
+        <tr><td>Einstellungen und Seitenliste</td><td>Tageslimit, eingeschaltete Seiten, Sprache, eigene Listen</td><td>Bis du sie änderst</td></tr>
+        <tr><td>Tageszustand</td><td>Heute genutzte Minuten, Entsperrungen, Ende der Zusatzzeit</td><td>Bis Mitternacht, danach Übernahme in den Verlauf, wenn der Schalter an ist</td></tr>
+        <tr><td>Verlauf</td><td>Tagessummen pro Seite: Nutzungszeit, Sperren, Entsperrungen, Zähler je Modul</td><td>Bis du ihn löschst</td></tr>
+        <tr><td>Reflexionstexte</td><td>Dein eigener Text mit seiner Frage</td><td>Bis du sie löschst. Wird der Speicher knapp, fallen die ältesten Texte zuerst weg</td></tr>
+        <tr><td>Erfolge</td><td>Zähler, Serie und der Tag eines Erfolgs</td><td>Bis du sie zurücksetzt</td></tr>
+        <tr><td>Technische Angaben</td><td>Installationsdatum, Stand der Schalter, Ende einer Fokuszeit</td><td>Bis zum Zurücksetzen oder Entfernen</td></tr>
+        <tr><td>Sitzungsdaten</td><td>Laufende Aufgabe, Text einer offenen Abmachung, Zuordnung eines Tabs zu einer Seite (nur Seiten-ID)</td><td>Spätestens bis der Browser endet</td></tr>
+        <tr><td>Ursprungsadresse</td><td>Die volle Adresse hinter dem # der Sperrseite, für die Rückkehr im Tab</td><td>Solange der Tab offen ist. Dein Browser kann sie in seinem eigenen Verlauf behalten</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Web-Aktivität</h2>
+    <p>Erfasst werden nur Seiten aus deiner Liste. Dauerhaft gespeichert wird nur die Seite, nie eine genaue Adresse, ein Pfad oder ein Seitentitel, und nur Tagessummen, also nicht, wann genau du auf einer Seite warst. Die Erweiterung erfährt über die Berechtigung <code>webNavigation</code> von Seitenaufrufen auf allen Seiten, vergleicht die Adresse aber nur mit deiner Liste. Steht die Seite nicht darauf, passiert nichts und nichts wird gespeichert. Deinen gespeicherten Browserverlauf liest sie nicht.</p>
+    <p>Auf eingeschalteten Seiten läuft ein kleines Skript. Es schickt die Adresse der Seite an die Erweiterung selbst und sonst nirgendwohin. Es liest keine Inhalte der Seite.</p>
+
+    <h2>Der erkannte Browser</h2>
+    <p>Die Erweiterung erkennt beim Anzeigen, welcher Browser läuft, damit die richtigen Texte erscheinen. Das Ergebnis wird nie gespeichert und nie verschickt.</p>
+
+    <h2>So löschst du Daten</h2>
+    <ul>
+      <li>Unter „Datenschutz“ legst du fest, was in den Verlauf kommt, und löschst gezielt oder alles.</li>
+      <li>„Komplett alles löschen“ entfernt alle Daten sofort. Die Einstellungen folgen mit Lockerungsschutz am nächsten Tag.</li>
+      <li>Die Funktion Statistik lässt sich unter „Allgemein“ ausschalten. Dann kommt nichts Neues in den Verlauf.</li>
+      <li>Beim Entfernen der Erweiterung löscht der Browser ihren Speicher. Exportierte Textdateien und der Verlauf des Browsers bleiben.</li>
+    </ul>
+
+    <h2>Grenzen</h2>
+    <p>Die Daten sind nicht verschlüsselt. Wer dein Browser-Profil nutzen kann, kann sie lesen, auch Reflexionstexte.</p>
+
+    <h2>Berechtigungen</h2>
+    <p>Eine genaue Erklärung jeder Berechtigung steht in der Erweiterung unter „Datenschutz“ im Abschnitt „Was diese Erweiterung darf und was nicht“.</p>
+  </body>
+</html>
